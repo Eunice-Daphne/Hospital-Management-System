@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+h1 {
+        color: #4CAF50;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+img.ava {
+    width: 10%;
+    border-radius: 10%;
+}
+.container {
+    padding: 16px;
+}
+</style>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Upload Files</title>
+</head>
+<body>
+<img src="../static/Glosys.jpg" alt="Ava" class="ava">
+<center><h1>Health Care Information System</h1>	</center>
+<center><h1>Upload Patient File</h1>
+ <form action = "http://localhost:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         Please upload your voice samples!
+<div class="container">         
+         <input type = "file" name = "file" >
+         <input type = "submit">
+</div>         
+</form>
+</center>
+</body>
+</html>

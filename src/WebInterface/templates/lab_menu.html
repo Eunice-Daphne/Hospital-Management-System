@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<style>
+table {
+		font-family: arial,sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+}
+td,th {
+		border: 1px solid #dddddd;
+		height: 50px;
+		text-align: center;
+		padding: 8px;
+		font-size: 200%
+}
+tr:nth-child(even){
+		background-color: #dddddd;
+}
+form {
+    border: 3px solid #f1f1f1;
+}
+h1 {
+        color: #4CAF50;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+img.ava {
+    width: 10%;
+    border-radius: 10%;
+}
+button {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.container {
+    padding: 16px;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+     background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+</style>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hospital Management System - Laboratory LOGIN</title>
+</head>
+<body>
+<img src="../static/Glosys.jpg" alt="Ava" class="ava">
+<center><h1>Health Care Information System</h1>	</center>
+<center>
+<h1>CLICK any of the following options</h1>
+<table border="1" width="400" height="150">
+<tr>
+<td><a href="http://localhost:5000/displab" class="button">Blood Test Details</a></td>
+<td><a href="http://localhost:5000/dispdiabetesbay" class="button">Diabetes - Bayesian</a></td>
+<td><a href="http://localhost:5000/dispdiabetesDT" class="button">Diabetes - Decision Tree</a></td>
+<td><a href="http://localhost:5000/dispdiabetesBP" class="button">Diabetes - BackPropogation</a></td>
+<td><a href="http://localhost:5000/dispparkinsonCNN" class="button">Parkinson - CNN</a></td>
+</tr>
+</table>
+</center>
+</body>
+</html>

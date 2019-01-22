@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hospital Management System - Admin LOGIN</title>
+<style>
+table {
+		font-family: arial,sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+}
+td,th {
+		border: 1px solid #dddddd;
+		height: 50px;
+		text-align: center;
+		padding: 8px;
+		font-size: 200%
+}
+tr:nth-child(even){
+		background-color: #dddddd;
+}
+form {
+    border: 3px solid #f1f1f1;
+}
+h1 {
+        color: #4CAF50;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+img.ava {
+    width: 10%;
+    border-radius: 10%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.container {
+    padding: 16px;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+     background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+</style>
+</head>
+<body>
+<img src="../static/Glosys.jpg" alt="Ava" class="ava">
+<center><h1>Health Care Information System</h1>	</center>
+<center>
+<h1>CLICK any of the following options</h1>
+<table border="1" width="400" height="150">
+<tr>
+<td><a href="http://localhost:5000/adddoc" class="button">ADD new Doctor</a></td>
+</tr>
+<tr>
+<td><a href="http://localhost:5000/addstf" class="button">ADD new Staff</a></td>
+</tr>
+<tr>
+<td><a href="http://localhost:5000/upddocspec" class="button">Update Doctor Specializtion</a></td>
+</tr>
+<tr>
+<td><a href="http://localhost:5000/dispdoc" class="button">Display Doctors</a></td>
+</tr>
+<tr>
+<td><a href="http://localhost:5000/dispstf" class="button">Display Staffs</a></td>
+</tr>
+<tr>
+<td><a href="http://localhost:5000/dispinpat" class="button">Display InPatients</a></td>
+</tr>
+<tr>
+<td><a href="http://localhost:5000/dispoutpat" class="button">Display OutPatients</a></td>
+</tr>
+</table>
+</center>
+</body>
+</html>

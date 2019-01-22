@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+h1 {
+        color: #4CAF50;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.container {
+    padding: 16px;
+}
+</style>
+<head>
+<meta charset="ISO-8859-1">
+<title>Display Patient</title>
+</head>
+<body>
+<center><h1>Blood Test details</h1></center>
+<form action = "http://localhost:5000/dbaddlabdetails" method = "POST">
+<div class="container">
+				<label><b>Patient ID:<input type="text" placeholder="Enter Patient ID" name="patid" required>
+				<label><b>Date of Test:<input type="text" placeholder="Enter Date of Test[dd/mm/yyyy]" name="dot" required>
+				<h1>Vital Signs Panel</h1>
+				<label><b>Blood Pressure (systolic):<input type="text" placeholder="Enter Blood Pressure (systolic)" name="BSY" required>
+				<label><b>Blood Pressure (diastolic):<input type="text" placeholder="Enter Blood Pressure (diastolic)" name="BDI" required>
+				<label><b>Breathing:<input type="text" placeholder="Enter Breathing" name="breath" required>
+				<label><b>Pulse:<input type="text" placeholder="Enter Pulse" name="pulse" required>
+				<label><b>Temperature:<input type="text" placeholder="Enter Temperature" name="temp" required>
+				<h1>Lipid Panel</h1>
+				<label><b>Triglycerides:<input type="text" placeholder="Enter Triglycerides" name="trigly" required>
+				<label><b>HDL (Good) cholesterol:<input type="text" placeholder="Enter HDL (Good) cholesterol" name="HDL" required>
+				<label><b>LDL (Bad) cholesterol:<input type="text" placeholder="Enter LDL (Bad) cholesterol" name="LDL" required>
+				<label><b>Total cholesterol/HDL ratio:<input type="text" placeholder="Enter Total cholesterol/HDL ratio" name="totalcho" required>
+				<h1>Complete Blood Count (CBC)</h1>
+				<label><b>WBC (white blood cell) leukocyte count:<input type="text" placeholder="Enter WBC (white blood cell) leukocyte count" name="WBC" required>
+				<label><b>RBC (red blood cell) erythrocyte count:<input type="text" placeholder="Enter RBC (red blood cell) erythrocyte count" name="RBC" required>
+				<label><b>Hematocrit (Hct):<input type="text" placeholder="Enter Hematocrit (Hct)" name="HTC" required>
+				<label><b>TriglycerideHemoglobin (Hgb)s:<input type="text" placeholder="Enter Hemoglobin (Hgb)" name="HGB" required>
+				<h1>Parkinson's Disease Specific Tests</h1>
+				<label><b>PET scan:<input type="text" placeholder="Enter PET scan" name="pets" required>
+				<button type="submit">SUBMIT</button>
+</div>				
+</form>
+</body>
+</html>

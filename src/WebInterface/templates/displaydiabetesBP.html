@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+h1 {
+        color: #4CAF50;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.container {
+    padding: 16px;
+}
+</style>
+<head>
+<meta charset="ISO-8859-1">
+<title>Display Diabetes Patient details</title>
+</head>
+<body>
+<center><h1>Diabetes details</h1></center>
+<form action = "http://localhost:5000/dbadddiabetesdetails" method = "POST">
+<div class="container">
+				<label><b>No of times pregnant:<input type="text" placeholder="Enter No of times pregnant" name="ntp" required>
+				<label><b>Plasma Glucose:<input type="text" placeholder="Enter Plasma Glucose" name="plasmaglo" required>
+				<label><b>Diastolic BP:<input type="text" placeholder="Enter diastolic BP" name="diastolbp" required>
+				<label><b>Triceps:<input type="text" placeholder="Enter triceps" name="tricep" required>
+				<label><b>Serum Insulin:<input type="text" placeholder="Enter serum insulin" name="serumins" required>
+				<label><b>BMI:<input type="text" placeholder="Enter BMI" name="bmi" required>
+				<label><b>Diabetes Pedigree:<input type="text" placeholder="Enter Diabetes Pedigree" name="diabetespedi" required>
+				<label><b>Age:<input type="text" placeholder="Enter AGE" name="age" required>
+				<label><b>Class Variable:<input type="text" placeholder="Enter Class Variable" name="classvar" required>
+			
+				<button type="submit">SUBMIT</button>
+</div>
+</form>	
+<form action = "http://localhost:5000/backpropogation" method = "GET">
+<div class="container">
+<button type="submit">RUN BACK PROPOGATION</button>
+</div>			
+</form>
+</body>
+</html>
